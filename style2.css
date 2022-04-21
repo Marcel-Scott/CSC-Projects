@@ -1,0 +1,86 @@
+
+
+#login-title{
+    margin: auto;
+    width: 20%;
+    background-color: burlywood;
+    padding-left:  4em; 
+}
+
+table{
+    background-color: burlywood;
+    width: 80%;
+    padding: 3em;
+    font-size: 20px;
+    margin: auto;
+    text-align: center
+
+}
+
+table> tr > td + td > input{
+    text-align: left ;
+}
+
+
+button, .nav-list li a {
+    text-decoration: none;
+    font-family: PTSerif, sans-serif;
+    font-weight: 400px;
+    font-size: 16px;
+    color: #edf0ed;
+}
+.nav-list li a{
+    border:2px  groove goldenrod;
+    padding: 5px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    border-bottom: 1px solid black;
+}
+
+#submit-Btn{
+    padding: 1px;
+}
+
+
+.logo{
+    cursor: pointer;
+    color: yellow;
+    border:2px  groove goldenrod;
+    padding: 5px;
+
+}
+
+.nav-list{
+    list-style: none;
+}
+
+.nav-list li{
+    display: inline-block;
+    padding: 0px 20px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.nav-list li a:hover{
+    color: yellow;
+    background-color: black;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+section{
+    margin-top: 2em;
+}
+body{
+    background-color: rgb(87, 36, 2);
+    margin: auto;
+    width: 90%;
+    height: 30em;
+}
