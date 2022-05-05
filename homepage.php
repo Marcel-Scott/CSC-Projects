@@ -20,7 +20,7 @@
 
     </header>
     <div class="img">
-    <h1 id="location-title">Book List</h1>    
+        <h1 id="location-title">Book List</h1>    
     </div>
     <table id="bookTable">
         <tr>
