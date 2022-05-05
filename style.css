@@ -4,7 +4,18 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
+}
+body{
     background-color: rgb(87, 36, 2);
+}
+.location{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 6em;
+    background-color: yellow;
+    
 }
 
 li, a, button{
@@ -15,6 +26,21 @@ li, a, button{
     color: #edf0ed;
 }
 
+.location1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20px;
+    margin: 3em 1em;
+    padding: 2em 5rem;
+    background-color: rgb(87, 36, 2);
+}
+
+#location-title{
+    text-align: center;
+    color: yellow;
+    border: 2px solid yellow;
+}
 header{
     display: flex;
     justify-content: space-between;
@@ -23,9 +49,6 @@ header{
     border-bottom: 1px solid black;
 }
 
-.img{
-    background-image: "istockphoto-1285788477-170667a.jpg";
-}
 
 .logo{
     cursor: pointer;
@@ -69,7 +92,89 @@ td, th {
 
 #bookTable{
     border: 1px solid black;
-    border-collapse: collapse;
     font-family: PTSerif, sans-serif;
 }
+#selectedbook{
+    color: black;
+}
+#selectedbook:hover{
+    color: yellow;
+    background-color: black;
+}
+.welcome-img, .confirmation{
+    background-image: url('/img/photo-1589998059171-988d887df646.JPEG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 500px;
+}
 
+.img-txt{
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    color: yellow;
+    height: auto;
+    margin-top: 200px;
+}
+
+#bkpantry{
+    font-size: 7em;
+    margin-bottom: 35px;
+}
+
+.btn, .confirm-btn{
+    font-size: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: .5em;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+
+.btn:hover, .btn:active{
+    background-color: yellow;
+    color: black;
+    transition: background-color 0.2s ease-in, color 0.2s ease-in;
+}
+
+
+.bookForm{
+    background-color: yellow;
+    width: 80%;
+    margin: 2em auto;
+    height: 25em;
+    text-align: center;
+    padding-top: 10em;
+    padding-right: 3em;
+}
+
+.bookDetails{
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+    width: 90%;
+    margin:auto;
+}
+
+.bookInfo{
+    padding-top: 10em;
+    padding-left: 2em;
+    color: rgb(241, 232, 225);
+    justify-content: space-evenly;
+}
+
+.bookImg{
+    padding-top: 2em;
+}
+
+.confirm-btn{
+    margin: 7em 0 3em 4em;
+    background-color: yellow;
+}
+
+.confirm-btn:hover, .confirm-btn:active{
+    background-color: white;
+    color: black;
+    transition: background-color 0.2s ease-in, color 0.2s ease-in;
+}

@@ -1,3 +1,8 @@
+<?php 
+session_start();
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style2.css">
+    <script src="/CSC-Projects//login.js"></script>
 </head>
 <body>
     <header>
@@ -18,7 +24,7 @@
 
     </header>
     <section class="login-info">
-        <h3 id="login-title">Login Here</h3>
+        <h3 id="login-title">Login </h3>
         <div> 
             <form action="login.php" method="post" id="loginForm">
                 
@@ -26,20 +32,22 @@
                     <tr>
                         <td>Username:</td>
                         <td>
-                            <input type="text" name="user">
+                            <input type="text" name="user" id="username" required>
                         </td>
                     </tr>
                     
                     <tr>
                         <td>Password:</td>
                         <td>
-                            <input type="password" name="password" id="">
+                            <input type="password" name="password" id="password" required>
                         </td>
                     </tr>
 
                     <tr>
                         <td>
-                            <input type="button" value="Login" name="submit" id="submit-Btn">
+                            <a href="/CSC-Projects//welcome.php"><input type="button" value="Login" name="submit" id="submit-Btn">
+                            </a>
+                            
                         </td>
 
                         <td>
@@ -51,5 +59,14 @@
             </form>
         </div>
     </section>
+
+    <script>
+        document.getElementById("submit-Btn").onclick = function() {
+            myFunction();
+        }
+        function myFunction() {
+            alert("Login Was Successful, Welcome Marcel");
+        }
+    </script>
 </body>
 </html>

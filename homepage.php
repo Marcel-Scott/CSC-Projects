@@ -12,16 +12,15 @@
         <h2 class="logo">The Book Pantry</h2>
         <nav>
             <ul class="nav-list">
-                <li>Home</li>
-                <li>Generes</li>
-                <li>Top Rated</li>
-                <li>Locations</li>
+                <li> <a href="/CSC-Projects//welcome.php">Home</a> </li>
+                <li> <a href="/CSC-Projects//turnbookin.php">Check In A Book</a> </li>
+                <li> <a href="/CSC-Projects//locations.php">Locations</a> </li>
             </ul>
         </nav>
 
     </header>
     <div class="img">
-        
+    <h1 id="location-title">Book List</h1>    
     </div>
     <table id="bookTable">
         <tr>
@@ -31,7 +30,7 @@
         </tr>
 
         <tr>
-            <td>In Search Of Lost Time</td>
+            <td> <a href="/CSC-Projects//checkOut.php" id="selectedbook">In Search Of Lost Time</a> </td>
             <td>Marcel Proust</td>
             <td>Yes</td>
         </tr>
